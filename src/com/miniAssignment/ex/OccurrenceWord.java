@@ -9,14 +9,15 @@ package com.miniAssignment.ex;
 
     public class OccurrenceWord {
         public static void main(String[] args) {
-            Scanner scanner = new Scanner(System.in);
+            Scanner scanner = new Scanner(System.in);// Create a Scanner object
 
             System.out.print("Enter a string: ");
-            String inputString = scanner.nextLine();
+            String inputString = scanner.nextLine();//Read user input
 
             System.out.print("Enter a word to count: ");
             String word = scanner.next();
 
+//String is split by spaces in temp. A for loop is used to find if the word is available in temp.
 
             String temp[] = inputString.split(" ");
 
