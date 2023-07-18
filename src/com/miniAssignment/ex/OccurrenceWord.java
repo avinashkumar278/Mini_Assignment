@@ -1,8 +1,3 @@
-/*	Write a program to count the occurrence of a word in a string:
-        String: Java is my favorite language. Java is java.
-        I/P: java
-        O/P: 3
-*/
 package com.miniAssignment.ex;
 
     import java.util.Scanner;
@@ -16,7 +11,7 @@ package com.miniAssignment.ex;
 
             System.out.print("Enter a word to count: ");
             String word = scanner.next();
-//String is split by spaces in temp. A for loop is used to find if the word is available in temp.
+
 
             String temp[] = inputString.split(" ");
 
