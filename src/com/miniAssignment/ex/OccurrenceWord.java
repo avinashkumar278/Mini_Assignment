@@ -1,3 +1,8 @@
+/*	Write a program to count the occurrence of a word in a string:
+        String: Java is my favorite language. Java is java.
+        I/P: java
+        O/P: 3
+*/
 package com.miniAssignment.ex;
 
     import java.util.Scanner;
