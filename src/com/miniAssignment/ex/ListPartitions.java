@@ -11,7 +11,7 @@ import java.util.List;
     public class ListPartitions {
 
         public static void main(String[] args) {
-            int[] arrayInput = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+            int[] arrayInput = {1, 2, 3, 5, 6, 7, 8, 9, 10,4,11};
             int batchSize = 3;
             System.out.println("ListPartitions : ");
             List<int[]> batches = createBatches(arrayInput, batchSize);
