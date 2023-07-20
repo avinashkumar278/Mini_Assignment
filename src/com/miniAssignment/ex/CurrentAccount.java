@@ -12,8 +12,8 @@ public class CurrentAccount implements Bank{
     public void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
-            System.out.println("Deposited: $" + amount);
-            System.out.println("Current Balance: $" + balance);
+            System.out.println("Deposited: " + amount);
+            System.out.println("Current Balance: " + balance);
         } else {
             System.out.println("Invalid deposit amount.");
         }
@@ -23,8 +23,8 @@ public class CurrentAccount implements Bank{
     public void withdraw(double amount) {
         if (amount > 0 && amount <= (balance + overdraftLimit)) {
             balance -= amount;
-            System.out.println("Withdrawn: $" + amount);
-            System.out.println("Current Balance: $" + balance);
+            System.out.println("Withdrawn: " + amount);
+            System.out.println("Current Balance: " + balance);
         } else {
             System.out.println("Invalid withdrawal amount or exceeds overdraft limit.");
         }

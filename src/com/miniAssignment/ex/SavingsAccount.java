@@ -13,8 +13,8 @@ public class SavingsAccount implements Bank{
     public void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
-            System.out.println("Deposited: $" + amount);
-            System.out.println("Current Balance: $" + balance);
+            System.out.println("Deposited: " + amount);
+            System.out.println("Current Balance: " + balance);
         } else {
             System.out.println("Invalid deposit amount.");
         }
@@ -24,8 +24,8 @@ public class SavingsAccount implements Bank{
     public void withdraw(double amount) {
         if (amount > 0 && amount <= balance) {
             balance -= amount;
-            System.out.println("Withdrawn: $" + amount);
-            System.out.println("Current Balance: $" + balance);
+            System.out.println("Withdrawn: " + amount);
+            System.out.println("Current Balance: " + balance);
         } else {
             System.out.println("Invalid withdrawal amount or insufficient balance.");
         }
@@ -35,7 +35,7 @@ public class SavingsAccount implements Bank{
     public void interestCalculation() {
         double interestAmount = balance * interestRate / 100;
         balance += interestAmount;
-        System.out.println("Interest Calculated: $" + interestAmount);
-        System.out.println("Current Balance (After Interest): $" + balance);
+        System.out.println("Interest Calculated: " + interestAmount);
+        System.out.println("Current Balance (After Interest): " + balance);
     }
 }
